@@ -1,0 +1,199 @@
+@font-face {
+    font-family: "Chlora";
+    src: url("../fonts/Chlora.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    min-width: 20rem;
+    overflow-x: hidden;
+
+    background:
+        radial-gradient(circle at 20% 25%, rgba(116, 214, 122, 0.13), transparent 0%),
+        radial-gradient(circle at 80% 10%, rgba(97, 217, 232, 0.055), transparent 50%),
+        radial-gradient(circle at 50% 60%, rgba(116, 214, 122, 0.055), transparent 100%),
+        linear-gradient(180deg, #080908 10%, #0b0f0c 5%, #080908 10%);
+    color: #ffffff;
+    font-family: "Chlora", system-ui, sans-serif;
+    font-weight: 600;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+        linear-gradient(rgba(243, 245, 239, 0.2) 0.0625rem, transparent 0.0625rem),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.2) 0.0625rem, transparent 0.0625rem);
+    background-size: 2.65rem 2.65rem;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent 50%);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p, h1, h2, h3 {
+    margin: 0;
+}
+
+main {
+    width: calc(100% - 3rem);
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+nav {
+    position: sticky;
+    top: 3rem;
+    z-index: 999;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    width: calc(100% - 3rem);
+    max-width: 90rem;
+    min-height: 3.625rem;
+    margin: 3rem auto 0;
+    padding: 0.65rem 2.7rem;
+
+    border: 0.0625rem solid rgba(243, 245, 239, 0.08);
+    border-radius: 999rem;
+
+    background: rgba(10, 11, 10, 0.38);
+    backdrop-filter: blur(1.125rem);
+    -webkit-backdrop-filter: blur(1.125rem);
+
+    box-shadow: 0 0.75rem 2.125rem rgba(0, 0, 0, 0.18);
+
+    font-family: system-ui, "Segoe UI", sans-serif;
+}
+
+.logo {
+
+}
+
+.portfolio-name {
+    margin-right: auto;
+    color: #f3f5ef;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+nav a {
+    color: #a6ada2;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: color 0.18s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+
+.projects-section {
+    min-height: calc(100vh - 8.75rem);
+    padding: 6rem 0 7rem;
+}
+
+.projects-section h1 {
+    margin-bottom: 4rem;
+    text-align: center;
+    color: #f3f5ef;
+    font-family: "Chlora", system-ui, sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.1rem;
+}
+
+.projects-layout {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.5rem;
+    width: 70rem;
+    max-width: 100%;
+    min-height: 36rem;
+    margin: 0 auto;
+}
+
+.project-card {
+    border: 0.0625rem solid rgba(243, 245, 239, 0.12);
+    background:
+        linear-gradient(145deg, rgba(116, 214, 122, 0.06), transparent 34%),
+        linear-gradient(315deg, rgba(228, 180, 92, 0.06), transparent 38%),
+        rgba(14, 16, 15, 0.84);
+    box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.36);
+}
+
+.main-project-card {
+    width: 28rem;
+    min-height: 36rem;
+    padding: 2rem;
+    border-radius: 1.75rem;
+}
+
+.side-projects {
+    width: 30rem;
+    min-height: 36rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-project-card {
+    flex: 1;
+    padding: 2rem;
+}
+
+.top-side-project {
+    border-radius: 1.75rem 1.75rem 0 0;
+    border-bottom: 0;
+}
+
+.bottom-side-project {
+    border-radius: 0 0 1.75rem 1.75rem;
+}
+
+.project-type {
+    margin-bottom: 1rem;
+    color: #74d67a;
+    font-family: system-ui, "Segoe UI", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04rem;
+}
+
+.project-card h2 {
+    color: #f3f5ef;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.04rem;
+}
+
+.project-description {
+    margin-top: 1rem;
+    color: #a6ada2;
+    font-size: 1rem;
+    line-height: 1.6;
+}
