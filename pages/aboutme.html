@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Nikolay Todorov">
-    <meta name="build-content" content="design inspired by nodejs style layout">
+    <meta name="build-content" content="design inspired by nodejs webpage">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me | Nikolay Todorov</title>
+    <link rel="icon" type="image/x-icon" href="../logo/favicon.ico">
     <link rel="stylesheet" href="../styles/aboutme.css">
 </head>
 
 <body>
 
     <nav>
-        <span class="logo"></span>
+        <span class="logo"><img src="../logo/logo.png" alt="logo"></span>
         <span class="portfolio-name">Nikolay Todorov</span>
 
         <a href="../index.html">Homepage</a>
@@ -27,18 +28,47 @@
             <div class="aboutme-top-row">
 
                 <article class="article-code-txt-card">
-                    
+                    <span style="color: #c586c0; margin-left: 1rem;">#include</span> <span style="color: #4fc1ff;">&lt;iostream&gt;</span>
+                    <br>
+                    <span style="color: #c586c0; margin-left: 1rem;">#include</span> <span style="color: #4fc1ff;">&lt;vector&gt;</span>
+                    <br>
+                    <br>
+                    <span style="color: #ff7d73; margin-left: 1rem;">class</span> <span style="color: #4ec9b0;">BadIdea</span> <span style="color: #ffd700;">&#123;</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ff7d73;  margin-left: 1rem;">long long</span> <span style="color: #d4d4d4;">something_will_happen</span><span style="color: #b5cea8; margin-left: 0.5rem;">[123456789]</span><span style="color: #d4d4d4;">;</span>
+                    <br>
+                    <span style="color: #ffd700; margin-left: 1rem;">&#125;</span><span style="color: #d4d4d4;">;</span>
+                    <br>
+                    <span style="color: #ff7d73; margin-left: 1rem;">int</span> <span style="color: #dcdcaa;">main</span><span style="color: #ffd700;">()</span> <span style="color: #ffd700;">&#123;</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4ec9b0; margin-left: 1rem;">std</span><span style="color: #d4d4d4;">::</span><span style="color: #4ec9b0;">vector</span><span style="color: #d4d4d4;">&lt;</span><span style="color: #4ec9b0;">BadIdea</span><span style="color: #d4d4d4;">&gt;</ span> <span style="color: #d4d4d4;">cannot_handle_this;</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #c586c0; margin-left: 1rem;">try</span> <span style="color: #ffd700;">&#123;</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #c586c0;  margin-left: 1rem;">while</span><span style="color: #ffd700;">(</span><span style="color: #569cd6;">true</span><span style="color: #ffd700;">)</span><span style="color: #ffd700;">&#123;</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #d4d4d4; margin-left: 1rem;">cannot_handle_this</span><span style="color: #d4d4d4;">.</span><span style="color: #dcdcaa;">emplace_back</span><span style="color: #ffd700;">()</span><span style="color: #d4d4d4;">;</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #6a9955; margin-left: 1rem;">// too much for this pc...</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700; margin-left: 1rem;">&#125;</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;  margin-left: 1rem;">&#125;</span><span style="color: #c586c0; margin-left: 0.5rem;">catch</span> <span style="color: #ffd700;">(</span><span style="color: #569cd6;">const</span> <span style="color: #4ec9b0;">std</span><span style="color: #d4d4d4;">::</span><span style="color: #4ec9b0;">bad_alloc</span><span style="color: #d4d4d4;">&amp;</span> <span style="color: #d4d4d4;">e</span><span style="color: #ffd700;">)</span> <span style="color: #ffd700;">&#123;</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4ec9b0; margin-left: 1rem;">std</span><span style="color: #d4d4d4;">::</span><span style="color: #d4d4d4;">cerr</span> <span style="color: #d4d4d4;">&lt;&lt;</span> <span style="color: #9cdcfe;">"Too many things happened!"</span> <span style="color: #d4d4d4;">&lt;&lt;</span> <span style="color: #d4d4d4;">e</span><span style="color: #d4d4d4;">.</span><span style="color: #dcdcaa;">what</span><span style="color: #ffd700;">()</span> <span style="color: #d4d4d4;">&lt;&lt;</span> <span style="color: #4ec9b0;">std</span><span style="color: #d4d4d4;">::</span><span style="color: #d4d4d4;">endl</span><span style="color: #d4d4d4;">;</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700; margin-left: 2rem;">&#125;</span>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #c586c0; margin-left: 1rem;">return</span> <span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">;</span>
+                    <br>
+                    <span style="color: #ffd700;  margin-left: 1rem;">&#125;</span>
                 </article>
 
                 <article class="article-info-aboutme">
                     <h1>A little bit more about me</h1>
 
                     <p>
-                        Third-year Software Engineering student at the University of Ruse "Angel Kanchev",
-                        focused on building strong fundamentals in web development, programming logic,
-                        and clean code structure. My goal is to work on, and build projects, where I can
-                        connect theory with practice, improve my problem-solving skills, and understand
-                        not only how something works, but why it works that way.
+                        Third-year Software Engineering student at the University of Ruse "Angel Kanchev", focused on building strong fundamentals in web development, programming logic, and clean code structure. My goal is to work on, and build projects, where I can connect theory with practice, improve my problem-solving skills, and understand not only how something works, but why it works that way. First programming language I started learning was C++ and I still like it a lot, but I am also intrested in web development and how all things work together in the web ecosystem.  I am a big fan of learning by doing, and I am always looking for new projects and challenges to work on, where I can apply my knowledge and skills, and learn something new in the process.
                     </p>
                 </article>
 
@@ -68,17 +98,113 @@
 
                 </div>
 
-                <article class="article-code-txt-card">
-
+                <article class="article-code-txt-card three-shapes-scene">
+                    <div id="three-shapes-scene"></div>
                 </article>
 
             </div>
+               
+            <div class="recognitions-heading">
+                <h4>Recognitions</h4>
+                <p>Certificates, honors, awards and milestones that reflect dedication and consistent performance over time</p>
+            </div>
 
-            <article class="article-wide-aboutme-card"></article>
+            <article class="article-wide-aboutme-card">
+
+                <div class="recognition">
+                    <div class="recognition-content">
+                        <h5 class="recognition-title">
+                            <a class="recognition-title-link" href="https://www.facebook.com/IIT.UniRuse/posts/pfbid08KPcJEnKBvf2jz7Mm4zHwB6xAnoKLTFdsJrGpDYWkaVCbWXFeJT3yi7G2B6y87D1l" target="_blank">
+                                Participation in student scientific session
+                            </a>
+                        </h5>
+
+                        <p class="recognition-text">
+                            Development and realization of the 2D video game "Pixel Courier", created with C++ and SFML.
+                        </p>
+                    </div>
+
+                    <div class="recognition-date">
+                        <span>Apr 30</span>
+                        <span>2026</span>
+                    </div>
+                </div>
+
+                <div class="recognition">
+                    <div class="recognition-content">
+                        <h5 class="recognition-title">
+                            <a class="recognition-title-link" href="https://www.facebook.com/IIT.UniRuse/posts/pfbid0K2aSFn5HuxxLqnbiEejZdfAxCxPH15wcoC9rUUzUjSHPaU5synFvCoQ3eLdY3EHAl" target="_blank">
+                                Special award - Ruse AI Hack with project "Evento Pulse"
+                            </a>
+                        </h5>
+
+                        <p class="recognition-text">
+                            48-hour AI Hackathon organised by Startup Factory with University of Ruse
+                            "Angel Kanchev" and Software Roastery as supporting partners.
+                        </p>
+                    </div>
+
+                    <div class="recognition-date">
+                        <span>Apr 24-26</span>
+                        <span>2026</span>
+                    </div>
+                </div>
+
+                <div class="recognition">
+                    <div class="recognition-content">
+                        <h5 class="recognition-title-static">
+                            Mentor in "Samsung Solve for Tomorrow Program" - Design Thinking Workshop
+                        </h5>
+
+                        <p class="recognition-text">
+                            Organised by Education 5.0 Foundation in partnership with the University of Ruse "Angel Kanchev".
+                        </p>
+                    </div>
+
+                    <div class="recognition-date">
+                        <span>Nov 9</span>
+                        <span>2024</span>
+                    </div>
+                </div>
+
+                <div class="recognition">
+                    <div class="recognition-content">
+                        <h5 class="recognition-title-static">
+                            Front-End Web Development certificate
+                        </h5>
+
+                        <p class="recognition-text">
+                            Early milestone in studying web development, completed through Progress BG. Certificate document number: 3364.
+                        </p>
+                    </div>
+
+                    <div class="recognition-date">
+                        <span>Feb 22</span>
+                        <span>2023</span>
+                    </div>
+                </div>
+
+                <div class="recognition recognition-no-border">
+                    <div class="recognition-content">
+                        <h5 class="recognition-title-static">
+                            First Certificate in English (FCE)
+                        </h5>
+
+                        <p class="recognition-text">
+                            Lifetime English language certificate issued by Cambridge English, UK.
+                        </p>
+                    </div>
+
+                    <div class="recognition-date">
+                        <span>2022</span>
+                    </div>
+                </div>
+
+            </article>
 
         </section>
 
     </main>
-
+<script type="module" src="../scripts/aboutme.js"></script>
 </body>
 </html>

@@ -6,13 +6,14 @@
     <meta name="author" content="Nikolay Todorov">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Nikolay Todorov</title>
+    <link rel="icon" type="image/x-icon" href="./logo/favicon.ico">
     <link rel="stylesheet" href="/styles/main.css">
 </head>
 
 <body>
 
     <nav>
-        <span class="logo"></span>
+        <span class="logo"><img src="./logo/logo.png" alt="logo"></span>
         <span class="portfolio-name">Nikolay Todorov</span>
 
         <a href="/index.html">Homepage</a>
@@ -26,31 +27,50 @@
 
             <div class="hero-section-txt">
                 <p class="degree">Software Engineering Student</p>
-                <h1>In a deep study of software engineering.</h1>
+                <h1>In a deep study of software engineering</h1>
                 <p class="hero-section-additional-txt">Focused on self-improvement and continuous learning. With care about code quality, structure and maintainability.</p>
             </div>
 
-            <div class="hero-section-code">
-               <span style="color: #c586c0; margin-left: 1rem;">#include</span> <span style="color: #4fc1ff;">&lt;iostream&gt;</span><br>
-                <span style="color: #c586c0; margin-left: 1rem;">#include</span> <span style="color: #4fc1ff;">&lt;vector&gt;</span><br>
-                <br>
-                <span style="color: #ff7d73; margin-left: 1rem;">class</span> <span style="color: #4ec9b0;">BadIdea</span> <span style="color: #ffd700;">&#123;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ff7d73;  margin-left: 1rem;">long long</span> <span style="color: #d4d4d4;">something_will_happen</span><span style="color: #b5cea8; margin-left: 0.5rem;">[123456789]</span><span style="color: #d4d4d4;">;</span><br>
-                <span style="color: #ffd700; margin-left: 1rem;">&#125;</span><span style="color: #d4d4d4;">;</span><br>
-                <br>
-                <span style="color: #ff7d73; margin-left: 1rem;">int</span> <span style="color: #dcdcaa;">main</span><span style="color: #ffd700;">()</span> <span style="color: #ffd700;">&#123;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4ec9b0; margin-left: 1rem;">std</span><span style="color: #d4d4d4;">::</span><span style="color: #4ec9b0;">vector</span><span style="color: #d4d4d4;">&lt;</span><span style="color: #4ec9b0;">BadIdea</span><span style="color: #d4d4d4;">&gt;</ span> <span style="color: #d4d4d4;">cannot_handle_this;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #c586c0; margin-left: 1rem;">try</span> <span style="color: #ffd700;">&#123;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #c586c0;  margin-left: 1rem;">while</span><span style="color: #ffd700;">(</span><span style="color: #569cd6;">true</span><span style="color: #ffd700;">)</span><span style="color: #ffd700;">&#123;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #d4d4d4; margin-left: 1rem;">cannot_handle_this</span><span style="color: #d4d4d4;">.</span><span style="color: #dcdcaa;">emplace_back</span><span style="color: #ffd700;">()</span><span style="color: #d4d4d4;">;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #6a9955; margin-left: 1rem;">// too much for this pc...</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700; margin-left: 1rem;">&#125;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;  margin-left: 1rem;">&#125;</span><span style="color: #c586c0; margin-left: 0.5rem;">catch</span> <span style="color: #ffd700;">(</span><span style="color: #569cd6;">const</span> <span style="color: #4ec9b0;">std</span><span style="color: #d4d4d4;">::</span><span style="color: #4ec9b0;">bad_alloc</span><span style="color: #d4d4d4;">&amp;</span> <span style="color: #d4d4d4;">e</span><span style="color: #ffd700;">)</span> <span style="color: #ffd700;">&#123;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #4ec9b0; margin-left: 1rem;">std</span><span style="color: #d4d4d4;">::</span><span style="color: #d4d4d4;">cerr</span> <span style="color: #d4d4d4;">&lt;&lt;</span> <span style="color: #9cdcfe;">"Too many things happened!"</span> <span style="color: #d4d4d4;">&lt;&lt;</span> <span style="color: #d4d4d4;">e</span><span style="color: #d4d4d4;">.</span><span style="color: #dcdcaa;">what</span><span style="color: #ffd700;">()</span> <span style="color: #d4d4d4;">&lt;&lt;</span> <span style="color: #4ec9b0;">std</span><span style="color: #d4d4d4;">::</span><span style="color: #d4d4d4;">endl</span><span style="color: #d4d4d4;">;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700; margin-left: 2rem;">&#125;</span><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #c586c0; margin-left: 1rem;">return</span> <span style="color: #b5cea8;">0</span><span style="color: #d4d4d4;">;</span><br>
-                <span style="color: #ffd700;  margin-left: 1rem;">&#125;</span>
+        <div class="hero-section-code">
+            <div class="code-section-dots">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+
+            <div class="hero-code-content">
+                <span style="color: #c586c0;">function</span> <span style="color: #dcdcaa;">PortfolioCard</span><span style="color: #ffd700;">()</span> <span style="color: #ffd700;">&#123;</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #c586c0;">const</span> <span style="color: #9cdcfe;">stack</span> <span style="color: #d4d4d4;">=</span> <span style="color: #ffd700;">[</span><span style="color: #ce9178;">"HTML"</span><span style="color: #d4d4d4;">,</span> <span style="color: #ce9178;">"CSS"</span><span style="color: #d4d4d4;">,</span> <span style="color: #ce9178;">"JavaScript"</span><span style="color: #d4d4d4;">,</span> <span style="color: #ce9178;">"React"</span><span style="color: #ffd700;">]</span><span style="color: #d4d4d4;">;</span><br>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #c586c0;">return</span> <span style="color: #ffd700;">(</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #d4d4d4;">&lt;</span><span style="color: #4ec9b0;">section</span> <span style="color: #9cdcfe;">className</span><span style="color: #d4d4d4;">=</span><span style="color: #ce9178;">"developer-card"</span><span style="color: #d4d4d4;">&gt;</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #d4d4d4;">&lt;</span><span style="color: #4ec9b0;">p</span> <span style="color: #9cdcfe;">className</span><span style="color: #d4d4d4;">=</span><span style="color: #ce9178;">"status"</span><span style="color: #d4d4d4;">&gt;</span><span style="color: #a6ada2;">learning by building</span><span style="color: #d4d4d4;">&lt;/</span><span style="color: #4ec9b0;">p</span><span style="color: #d4d4d4;">&gt;</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #d4d4d4;">&lt;</span><span style="color: #4ec9b0;">h2</span><span style="color: #d4d4d4;">&gt;</span><span style="color: #a6ada2;">Nikolay Todorov</span><span style="color: #d4d4d4;">&lt;/</span><span style="color: #4ec9b0;">h2</span><span style="color: #d4d4d4;">&gt;</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #d4d4d4;">&lt;</span><span style="color: #4ec9b0;">ul</span><span style="color: #d4d4d4;">&gt;</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">&#123;</span><span style="color: #9cdcfe;">stack</span><span style="color: #d4d4d4;">.</span><span style="color: #dcdcaa;">map</span><span style="color: #ffd700;">((</span><span style="color: #9cdcfe;">technology</span><span style="color: #ffd700;">)</span> <span style="color: #d4d4d4;">=&gt;</span> <span style="color: #ffd700;">(</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #d4d4d4;">&lt;</span><span style="color: #4ec9b0;">li</span> <span style="color: #9cdcfe;">key</span><span style="color: #d4d4d4;">=</span><span style="color: #ffd700;">&#123;</span><span style="color: #9cdcfe;">technology</span><span style="color: #ffd700;">&#125;</span><span style="color: #d4d4d4;">&gt;</span><span style="color: #ffd700;">&#123;</span><span style="color: #9cdcfe;">technology</span><span style="color: #ffd700;">&#125;</span><span style="color: #d4d4d4;">&lt;/</span><span style="color: #4ec9b0;">li</span><span style="color: #d4d4d4;">&gt;</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">))&#125;</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #d4d4d4;">&lt;/</span><span style="color: #4ec9b0;">ul</span><span style="color: #d4d4d4;">&gt;</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #d4d4d4;">&lt;/</span><span style="color: #4ec9b0;">section</span><span style="color: #d4d4d4;">&gt;</span>
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffd700;">);</span>
+                <br>
+                <span style="color: #ffd700;">&#125;</span>
+                <br>
+                <br>
+                <span style="color: #c586c0;">export default</span> <span style="color: #dcdcaa;">PortfolioCard</span><span style="color: #d4d4d4;">;</span>
+            </div>
+        </div>
 
         </section>
 
