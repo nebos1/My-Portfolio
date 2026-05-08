@@ -80,12 +80,23 @@ nav {
 }
 
 .logo {
-
+    display: flex;
+    width: 2.2rem;
+    height: 2.2rem;
+    overflow: hidden;
 }
+
+.logo img {
+    width: 2.4rem;
+    height: auto;
+    display: block;
+    opacity: 1;
+}
+
 
 .portfolio-name {
     margin-right: auto;
-    color: #f3f5ef;
+    color: #ffffff;
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -126,7 +137,7 @@ nav a:hover {
 
 h1 {
     max-width: 42.5rem;
-    color: #f3f5ef;
+    color: #ffffff;
     font-size: 5.6rem;
     font-weight: 600;
     line-height: 0.98;
@@ -142,12 +153,14 @@ h1 {
     line-height: 1.65;
 }
 
+
 .hero-section-code {
-    padding-top: 1rem;
-    padding-left: 1rem;
+    position: relative;
+    padding: 3.25rem 1.25rem 1.25rem;
     min-height: 32.5rem;
     width: 100%;
     flex: 1;
+    overflow: hidden;
     border: 0.0625rem solid rgba(243, 245, 239, 0.12);
     border-radius: 1.75rem;
     background:
@@ -155,6 +168,30 @@ h1 {
         linear-gradient(315deg, rgba(228, 180, 92, 0.06), transparent 40%),
         rgba(14, 16, 15, 0.84);
     box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.36);
+}
+
+.code-section-dots {
+    position: absolute;
+    top: 1.25rem;
+    left: 1.25rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.code-section-dots span {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: rgba(166, 173, 162, 0.45);
+}
+
+.hero-code-content {
+    color: #ffffff;
+    font-family: "DraftingMono-Bold", monospace;
+    font-size: 0.92rem;
+    font-weight: 700;
+    line-height: 1.65;
+    white-space: nowrap;
 }
 
 .current-stack-section {
@@ -166,7 +203,7 @@ h1 {
 
 .current-stack-section h2 {
     margin-bottom: 2.8rem;
-    color: #f3f5ef;
+    color: #ffffff;
     font-family: "Chlora", system-ui, sans-serif;
     font-size: 3rem;
     font-weight: 800;
@@ -236,5 +273,147 @@ h1 {
 
     to {
         left: -5.4rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.65rem;
+        width: calc(100% - 2rem);
+        margin-top: 1.5rem;
+        padding: 1.25rem 1rem;
+        border-radius: 1.75rem;
+        text-align: center;
+    }
+
+    .logo {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-bottom: 0.15rem;
+    }
+
+    .logo img {
+        width: 3rem;
+        transform: rotate(6deg);
+    }
+
+    .portfolio-name {
+        margin-right: 0;
+        margin-bottom: 0.4rem;
+        font-size: 1.2rem;
+        line-height: 1.2;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 62rem) {
+    .hero-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2.5rem;
+
+        min-height: auto;
+        padding: 2.5rem 0 4rem;
+    }
+
+    .hero-section-txt {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    h1 {
+        max-width: 100%;
+        font-size: clamp(3rem, 14vw, 5.6rem);
+        line-height: 1;
+        letter-spacing: -0.1rem;
+    }
+
+    .hero-section-additional-txt {
+        max-width: 100%;
+        font-size: 1rem;
+        line-height: 1.55;
+    }
+
+    .hero-section-code {
+        width: 100%;
+        min-height: 28rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .hero-code-content {
+        min-width: 42rem;
+        font-size: 0.82rem;
+        line-height: 1.65;
+    }
+
+     .current-stack-section {
+        padding: 3rem 0 5rem;
+    }
+
+    .current-stack-section h2 {
+        font-size: clamp(2.4rem, 11vw, 3rem);
+        line-height: 1.08;
+        margin-bottom: 2.5rem;
+    }
+
+    .web-tech-stack-slider {
+        width: 100%;
+        max-width: 100%;
+        height: 6.5rem;
+    }
+
+    .web-tech-stack-slider img {
+        width: 3.4rem;
+        height: 3.4rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    main {
+        width: calc(100% - 1.5rem);
+    }
+
+    .hero-section {
+        padding-top: 2rem;
+    }
+
+    h1 {
+        font-size: clamp(2.5rem, 15vw, 3.6rem);
+        letter-spacing: -0.07rem;
+    }
+
+    .hero-section-code {
+        min-height: 25rem;
+        padding: 3rem 1rem 1rem;
+    }
+
+    .hero-code-content {
+        min-width: 40rem;
+        font-size: 0.74rem;
+    }
+
+    .current-stack-section h2 {
+        font-size: clamp(2.1rem, 12vw, 2.7rem);
+    }
+
+    .web-tech-stack-slider {
+        width: 100%;
+        height: 6rem;
+    }
+
+    .web-tech-stack-slider img {
+        width: 3rem;
+        height: 3rem;
     }
 }
