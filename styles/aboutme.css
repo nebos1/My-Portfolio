@@ -108,6 +108,14 @@ nav {
     font-weight: 700;
 }
 
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: 0.25rem;
+}
+
 nav a {
     color: #a6ada2;
     font-size: 1rem;
@@ -117,6 +125,39 @@ nav a {
 
 nav a:hover {
     color: #ffffff;
+}
+
+.nav-separator {
+    width: 0.0625rem;
+    height: 1.35rem;
+    flex-shrink: 0;
+    background: #ffffff;
+}
+
+.github-link {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.github-link:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.github-link img {
+    width: 1.7rem;
+    height: 1.7rem;
+    display: block;
+    object-fit: contain;
+}
+
+.portfolio-name {
+    margin-right: 0;
 }
 
 .aboutme-section {
@@ -407,8 +448,23 @@ nav a:hover {
     }
 }
 
+.three-shapes-scene {
+    overflow: hidden;
+}
+
+#three-shapes-scene {
+    width: 100%;
+    height: 100%;
+}
+
+#three-shapes-scene canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width: 48rem) {
-    nav {
+        nav {
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -433,6 +489,10 @@ nav a:hover {
         transform: rotate(6deg);
     }
 
+    .nav-separator {
+        display: none;
+    }
+
     .portfolio-name {
         margin-right: 0;
         margin-bottom: 0.4rem;
@@ -440,11 +500,32 @@ nav a:hover {
         line-height: 1.2;
     }
 
-    nav a {
+    .nav-links {
+        width: 100%;
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.65rem;
+    }
+
+    .nav-links a {
         display: block;
         width: 100%;
         font-size: 1rem;
         line-height: 1.4;
+    }
+
+    .github-link {
+        width: 2rem;
+        height: 2rem;
+        margin-top: 0.25rem;
+    }
+
+    .github-link img {
+        width: 1.35rem;
+        height: 1.35rem;
     }
 
     main {
@@ -613,20 +694,4 @@ nav a:hover {
     .recognition-text {
         font-size: 0.9rem;
     }
-}
-
-
-.three-shapes-scene {
-    overflow: hidden;
-}
-
-#three-shapes-scene {
-    width: 100%;
-    height: 100%;
-}
-
-#three-shapes-scene canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
 }
