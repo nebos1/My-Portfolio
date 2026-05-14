@@ -247,6 +247,37 @@ nav a:hover {
     font-size: 1rem;
     line-height: 1.6;
 }
+
+.collaborator-link {
+    color: #a6ada2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.collaborator-link:hover {
+    color: #ffffff;
+}
+
+.evento-site-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.evento-site-link {
+    color: #f3f5ef;
+    font-family: system-ui, "Segoe UI", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-align: center;
+    transition: color 0.3s ease;
+    overflow-wrap: anywhere;
+}
+
+.evento-site-link:hover {
+    color: #74d67a;
+}
+
 .project-title-link {
     position: relative;
     display: inline-block;
