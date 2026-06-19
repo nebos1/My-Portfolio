@@ -238,15 +238,15 @@ nav a:hover {
     justify-content: center;
 }
 
-.i-like-also, .i-want-to-learn {
-    width: 50%;
+.i-like-also {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.i-like-also h2, .i-want-to-learn h3 {
+.i-like-also h2 {
     margin-bottom: 2rem;
 
     color: #ffffff;
@@ -257,21 +257,21 @@ nav a:hover {
     text-align: center;
 }
 
-.oop-programing-skills, .backend-programing-skills {
+.oop-programing-skills {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
 
-.oop-programing-skills img, .backend-programing-skills img {
+.oop-programing-skills img {
     width: 4rem;
     height: 4rem;
     object-fit: contain;
     opacity: 0.82;
 }
 
-.oop-programing-skills img:hover, .backend-programing-skills img:hover {
+.oop-programing-skills img:hover {
     opacity: 1;
     transform: scale(1.08);
     filter: drop-shadow(0 0 1rem rgba(105, 192, 110, 0.32));
@@ -583,20 +583,20 @@ nav a:hover {
         padding: 1.5rem 0;
     }
 
-    .i-like-also, .i-want-to-learn {
+    .i-like-also {
         width: 100%;
     }
 
-    .i-like-also h2, .i-want-to-learn h3 {
+    .i-like-also h2 {
         font-size: 2rem;
         margin-bottom: 1.5rem;
     }
 
-    .oop-programing-skills, .backend-programing-skills {
+    .oop-programing-skills {
         gap: 1.75rem;
     }
 
-    .oop-programing-skills img, .backend-programing-skills img {
+    .oop-programing-skills img {
         width: 3.6rem;
         height: 3.6rem;
     }
