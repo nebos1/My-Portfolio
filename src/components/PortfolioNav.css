@@ -1,0 +1,195 @@
+.homepage-page nav,
+.projects-page nav,
+.aboutme-page nav {
+	position: sticky;
+	top: 3rem;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	width: calc(100% - 3rem);
+	max-width: 90rem;
+	min-height: 3.625rem;
+	margin: 3rem auto 0;
+	padding: 0.65rem 2.7rem;
+	border: 0.0625rem solid rgba(243, 245, 239, 0.08);
+	border-radius: 999rem;
+	background: rgba(10, 11, 10, 0.38);
+	backdrop-filter: blur(1.125rem);
+	-webkit-backdrop-filter: blur(1.125rem);
+	box-shadow: 0 0.75rem 2.125rem rgba(0, 0, 0, 0.18);
+	font-family: system-ui, "Segoe UI", sans-serif;
+}
+
+.homepage-page .logo,
+.projects-page .logo,
+.aboutme-page .logo {
+	display: flex;
+	width: 2.2rem;
+	height: 2.2rem;
+	overflow: hidden;
+}
+
+.homepage-page .logo img,
+.projects-page .logo img,
+.aboutme-page .logo img {
+	width: 2.4rem;
+	height: auto;
+	display: block;
+	opacity: 1;
+}
+
+.homepage-page .portfolio-name,
+.projects-page .portfolio-name,
+.aboutme-page .portfolio-name {
+	margin-right: 0;
+	color: #ffffff;
+	font-size: 1.25rem;
+	font-weight: 700;
+}
+
+.homepage-page .nav-links,
+.projects-page .nav-links,
+.aboutme-page .nav-links {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	margin-left: auto;
+	margin-right: 0.25rem;
+}
+
+.homepage-page nav a,
+.projects-page nav a,
+.aboutme-page nav a {
+	color: #a6ada2;
+	font-size: 1rem;
+	font-weight: 600;
+	transition: color 0.18s ease;
+}
+
+.homepage-page nav a:hover,
+.projects-page nav a:hover,
+.aboutme-page nav a:hover,
+.homepage-page nav a.active,
+.projects-page nav a.active,
+.aboutme-page nav a.active {
+	color: #ffffff;
+}
+
+.homepage-page .nav-separator,
+.projects-page .nav-separator,
+.aboutme-page .nav-separator {
+	width: 0.0625rem;
+	height: 1.35rem;
+	flex-shrink: 0;
+	background: #ffffff;
+}
+
+.homepage-page .github-link,
+.projects-page .github-link,
+.aboutme-page .github-link {
+	width: 1.5rem;
+	height: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.7;
+	transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.homepage-page .github-link:hover,
+.projects-page .github-link:hover,
+.aboutme-page .github-link:hover {
+	opacity: 1;
+	transform: scale(1.2);
+}
+
+.homepage-page .github-link img,
+.projects-page .github-link img,
+.aboutme-page .github-link img {
+	width: 1.7rem;
+	height: 1.7rem;
+	display: block;
+	object-fit: contain;
+}
+
+@media (max-width: 48rem) {
+	.homepage-page nav,
+	.projects-page nav,
+	.aboutme-page nav {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0.65rem;
+		width: calc(100% - 2rem);
+		margin-top: 1.5rem;
+		padding: 1.25rem 1rem;
+		border-radius: 1.75rem;
+		text-align: center;
+	}
+
+	.homepage-page .logo,
+	.projects-page .logo,
+	.aboutme-page .logo {
+		width: 2.8rem;
+		height: 2.8rem;
+		margin-bottom: 0.15rem;
+	}
+
+	.homepage-page .logo img,
+	.projects-page .logo img,
+	.aboutme-page .logo img {
+		width: 3rem;
+		transform: rotate(6deg);
+	}
+
+	.homepage-page .nav-separator,
+	.projects-page .nav-separator,
+	.aboutme-page .nav-separator {
+		display: none;
+	}
+
+	.homepage-page .portfolio-name,
+	.projects-page .portfolio-name,
+	.aboutme-page .portfolio-name {
+		margin-bottom: 0.4rem;
+		font-size: 1.2rem;
+		line-height: 1.2;
+	}
+
+	.homepage-page .nav-links,
+	.projects-page .nav-links,
+	.aboutme-page .nav-links {
+		width: 100%;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.65rem;
+	}
+
+	.homepage-page .nav-links a,
+	.projects-page .nav-links a,
+	.aboutme-page .nav-links a {
+		display: block;
+		width: 100%;
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+
+	.homepage-page .github-link,
+	.projects-page .github-link,
+	.aboutme-page .github-link {
+		width: 2rem;
+		height: 2rem;
+		margin-top: 0.25rem;
+	}
+
+	.homepage-page .github-link img,
+	.projects-page .github-link img,
+	.aboutme-page .github-link img {
+		width: 1.35rem;
+		height: 1.35rem;
+	}
+}

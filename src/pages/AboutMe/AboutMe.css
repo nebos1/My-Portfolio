@@ -1,0 +1,479 @@
+.aboutme-page .aboutme-section {
+    min-height: calc(100vh - 8.75rem);
+    padding: 6rem 0 7rem;
+}
+
+.aboutme-page .aboutme-top-row {
+    display: block;
+}
+
+.aboutme-page .article-code-txt-card {
+    font-family: "DraftingMono-Bold", monospace;
+    height: 26rem;
+    border: 0.0625rem solid rgba(243, 245, 239, 0.12);
+    border-radius: 1.75rem;
+    background:
+        linear-gradient(145deg, rgba(116, 214, 122, 0.06), transparent 34%),
+        linear-gradient(315deg, rgba(228, 180, 92, 0.06), transparent 38%),
+        rgba(14, 16, 15, 0.84);
+    box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.36);
+    padding: 1rem 1.25rem 1rem 0.25rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+
+.aboutme-page .article-info-aboutme {
+    max-width: 62rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.aboutme-page .article-info-aboutme h1 {
+    color: #ffffff;
+    font-size: 3.25rem;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.08rem;
+}
+
+.aboutme-page .article-info-aboutme p {
+    margin-top: 1.25rem;
+    color: #a6ada2;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.aboutme-page .aboutme-bottom-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.aboutme-page .aboutme-bottom-row .article-code-txt-card {
+    width: 50%;
+    height: 26rem;
+    padding: 0;
+}
+
+.aboutme-page .aboutme-bottom-row .bottom-code-card {
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 1rem 1.25rem 1rem 0.25rem;
+}
+
+.aboutme-page #three-shapes-scene {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutme-page .three-shapes-scene {
+    overflow: hidden;
+}
+
+.aboutme-page #three-shapes-scene canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.aboutme-page .about-me-learning-info {
+    width: 50%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme-page .i-like-also {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme-page .i-like-also h2 {
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.05;
+    letter-spacing: -0.04rem;
+    text-align: center;
+}
+
+.aboutme-page .oop-programing-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.aboutme-page .oop-programing-skills img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    opacity: 0.82;
+}
+
+.aboutme-page .oop-programing-skills img:hover {
+    opacity: 1;
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 1rem rgba(105, 192, 110, 0.32));
+}
+
+.aboutme-page .article-wide-aboutme-card {
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem 5rem 2rem 2rem;
+    border: 0.0625rem solid rgba(243, 245, 239, 0.12);
+    border-radius: 1.75rem;
+    background:
+        linear-gradient(145deg, rgba(116, 214, 122, 0.06), transparent 34%),
+        linear-gradient(315deg, rgba(228, 180, 92, 0.06), transparent 38%),
+        rgba(14, 16, 15, 0.84);
+    box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.36);
+    overflow: hidden;
+}
+
+.aboutme-page .recognitions-heading {
+    max-width: 50rem;
+    margin: 5rem auto 1rem;
+    text-align: center;
+}
+
+.aboutme-page .recognitions-heading h4 {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: -0.06rem;
+    margin: 0;
+}
+
+.aboutme-page .recognitions-heading p {
+    margin-top: 0.35rem;
+    color: #a6ada2;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.55;
+}
+
+.aboutme-page .recognition {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 8.75rem;
+    align-items: stretch;
+    min-height: 8rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    border-bottom: 0.0625rem solid rgba(243, 245, 239, 0.12);
+    transition: background 0.2s ease;
+}
+
+.aboutme-page .recognition:hover {
+    background: rgba(255, 255, 255, 0.018);
+}
+
+.aboutme-page .recognition-no-border {
+    border-bottom: 0;
+}
+
+.aboutme-page .recognition-content {
+    min-width: 0;
+    padding: 1.35rem 2rem 1.35rem 0;
+}
+
+.aboutme-page .recognition-title {
+    margin: 0;
+}
+
+.aboutme-page .recognition-title-link,
+.aboutme-page .recognition-title-static {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.03rem;
+    text-decoration: none;
+}
+
+.aboutme-page .recognition-title-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.28rem;
+    width: 0;
+    height: 0.1rem;
+    background: #ffffff;
+    transition: width 0.5s ease;
+}
+
+.aboutme-page .recognition-title-link:hover::after {
+    width: 100%;
+}
+
+.aboutme-page .recognition-text {
+    margin-top: 0.45rem;
+    max-width: 58rem;
+    color: #a6ada2;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.45;
+}
+
+.aboutme-page .recognition-date {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 0.25rem;
+    padding-left: 1.35rem;
+    padding-right: 0.15rem;
+    border-left: 0.0625rem solid rgba(243, 245, 239, 0.12);
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: right;
+}
+
+@media (max-width: 75rem) {
+    .aboutme-page main {
+        width: calc(100% - 2rem);
+    }
+
+    .aboutme-page .aboutme-section {
+        padding: 4rem 0 6rem;
+    }
+
+    .aboutme-page .aboutme-top-row {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .aboutme-page .article-code-txt-card {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .aboutme-page .article-info-aboutme {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .aboutme-page .article-info-aboutme h1 {
+        max-width: 100%;
+        font-size: clamp(2.8rem, 8vw, 3.25rem);
+        line-height: 1.05;
+    }
+
+    .aboutme-page .article-info-aboutme p {
+        max-width: 100%;
+    }
+
+    .aboutme-page .aboutme-bottom-row {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .aboutme-page .about-me-learning-info {
+        width: 100%;
+    }
+
+    .aboutme-page .aboutme-bottom-row .article-code-txt-card {
+        width: 100%;
+    }
+
+    .aboutme-page .aboutme-bottom-row .bottom-code-card {
+        padding: 1rem 1.25rem 1rem 0.25rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    .aboutme-page main {
+        width: calc(100% - 1.5rem);
+    }
+
+    .aboutme-page .aboutme-section {
+        padding: 2.5rem 0 5rem;
+    }
+
+    .aboutme-page .aboutme-top-row {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .aboutme-page .article-code-txt-card {
+        width: 100%;
+        height: auto;
+        min-height: 24rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 1rem 1.25rem;
+        font-size: 0.75rem;
+        line-height: 1.55;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .aboutme-page .article-info-aboutme {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .aboutme-page .article-info-aboutme h1 {
+        font-size: clamp(2.4rem, 12vw, 3.25rem);
+        line-height: 1.05;
+        letter-spacing: -0.06rem;
+    }
+
+    .aboutme-page .article-info-aboutme p {
+        font-size: 1rem;
+        line-height: 1.55;
+    }
+
+    .aboutme-page .aboutme-bottom-row {
+        flex-direction: column;
+        gap: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    .aboutme-page .about-me-learning-info {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 1.5rem 0;
+    }
+
+    .aboutme-page .i-like-also {
+        width: 100%;
+    }
+
+    .aboutme-page .i-like-also h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .aboutme-page .oop-programing-skills {
+        gap: 1.75rem;
+    }
+
+    .aboutme-page .oop-programing-skills img {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    .aboutme-page .aboutme-bottom-row .article-code-txt-card {
+        width: 100%;
+        height: 24rem;
+        min-height: 24rem;
+        padding: 0;
+    }
+
+    .aboutme-page .aboutme-bottom-row .bottom-code-card {
+        padding: 1rem 1.25rem;
+    }
+
+    .aboutme-page .three-shapes-scene {
+        overflow: hidden;
+    }
+
+    .aboutme-page .recognitions-heading {
+        max-width: 100%;
+        margin: 4rem auto 1.25rem;
+        padding: 0 0.5rem;
+    }
+
+    .aboutme-page .recognitions-heading h4 {
+        font-size: clamp(2.4rem, 12vw, 3rem);
+        line-height: 1.05;
+    }
+
+    .aboutme-page .recognitions-heading p {
+        margin-top: 0.5rem;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .aboutme-page .article-wide-aboutme-card {
+        padding: 0;
+        margin-top: 1.5rem;
+        border-radius: 1.5rem;
+    }
+
+    .aboutme-page .recognition {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        padding: 0 1.25rem;
+    }
+
+    .aboutme-page .recognition-content {
+        padding: 1.5rem 0 1.1rem;
+    }
+
+    .aboutme-page .recognition-title-link,
+    .aboutme-page .recognition-title-static {
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+
+    .aboutme-page .recognition-text {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .aboutme-page .recognition-date {
+        align-items: flex-start;
+        text-align: left;
+        padding: 1rem 0 1.4rem;
+        border-left: 0;
+        border-top: 0.0625rem solid rgba(243, 245, 239, 0.12);
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 30rem) {
+    .aboutme-page .article-code-txt-card {
+        font-size: 0.68rem;
+    }
+
+    .aboutme-page .article-info-aboutme h1 {
+        font-size: 2.35rem;
+    }
+
+    .aboutme-page .article-info-aboutme p {
+        font-size: 0.95rem;
+    }
+
+    .aboutme-page .aboutme-bottom-row .article-code-txt-card {
+        height: 22rem;
+        min-height: 22rem;
+    }
+
+    .aboutme-page .recognition {
+        padding: 0 1rem;
+    }
+
+    .aboutme-page .recognition-title-link,
+    .aboutme-page .recognition-title-static {
+        font-size: 1.12rem;
+    }
+
+    .aboutme-page .recognition-text {
+        font-size: 0.9rem;
+    }
+}
