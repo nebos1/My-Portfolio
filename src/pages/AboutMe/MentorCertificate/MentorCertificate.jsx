@@ -1,10 +1,11 @@
 import certificate from "../../../award-pics/Mentor.jpg";
+import "./MentorCertificate.css";
 
 function MentorCertificate() {
     return (
-        <div className="award-page">
+        <div className="mentor-certificate-page page-background">
             <main>
-                <img className="award-document" src={certificate} alt="Mentor certificate"/>
+                <img className="mentor-certificate-document" src={certificate} alt="Mentor certificate"/>
             </main>
         </div>
     );

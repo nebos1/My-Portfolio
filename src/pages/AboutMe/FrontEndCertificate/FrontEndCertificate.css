@@ -1,0 +1,27 @@
+.front-end-certificate-page {
+    height: 100vh;
+    height: 100svh;
+    overflow: hidden;
+}
+
+.front-end-certificate-page main {
+    width: 100%;
+    height: 100vh;
+    height: 100svh;
+    margin: 0 auto;
+    padding: clamp(0.75rem, 2vw, 2rem);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front-end-certificate-document {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}

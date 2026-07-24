@@ -5,7 +5,7 @@ import "./PortfolioNav.css";
 
 function PortfolioNav() {
     return (
-        <nav>
+        <nav className="portfolio-nav">
             <span className="logo">
                 <img src={logo} alt="logo" />
             </span>

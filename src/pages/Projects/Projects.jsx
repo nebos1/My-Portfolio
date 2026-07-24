@@ -3,7 +3,7 @@ import PortfolioNav from "../../components/PortfolioNav.jsx";
 
 function ProjectsPage() {
     return (
-        <div className="projects-page">
+        <div className="projects-page page-background">
             <PortfolioNav />
 
             <main>

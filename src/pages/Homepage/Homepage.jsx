@@ -13,7 +13,7 @@ import PortfolioNav from "../../components/PortfolioNav.jsx";
 
 function Homepage() {
     return (
-        <div className="homepage-page">
+        <div className="homepage-page page-background">
             <PortfolioNav />
 
             <main>

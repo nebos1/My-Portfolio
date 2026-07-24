@@ -26,7 +26,7 @@ function AboutMeContent() {
     }, []);
 
     return (
-        <div className="aboutme-page">
+        <div className="aboutme-page page-background">
             <PortfolioNav />
 
             <main>

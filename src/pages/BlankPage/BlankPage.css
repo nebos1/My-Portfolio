@@ -1,0 +1,25 @@
+.blank-h1-page {
+    height: 100vh;
+    height: 100svh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.blank-h1-page h1 {
+    width: 100%;
+    max-width: min(100rem, calc(100vw - 2rem));
+    max-height: calc(100svh - 2rem);
+    margin: 0;
+    overflow: hidden;
+    color: #ffffff;
+    font-size: clamp(1rem, min(5vw, 10vh), 6rem);
+    font-weight: 600;
+    line-height: 1.05;
+    text-align: center;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}

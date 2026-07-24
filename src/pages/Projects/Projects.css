@@ -1,3 +1,9 @@
+.projects-page main {
+    width: calc(100% - 3rem);
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
 .projects-page .projects-section {
     min-height: calc(100vh - 8.75rem);
     padding: 6rem 0 7rem;
