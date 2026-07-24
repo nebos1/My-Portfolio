@@ -2,7 +2,7 @@ import { Link, Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
 import "./AboutMe.css";
 import PortfolioNav from "../../components/PortfolioNav.jsx";
-import aboutMeScriptUrl from "../../scripts/scripts.js?url";
+import { createThreeShapesScene } from "../../scripts/scripts.js";
 import EventoPulseCertificate from "./EventoPulseCertificate/EventoPulseCertificate.jsx";
 import MentorCertificate from "./MentorCertificate/MentorCertificate.jsx";
 import FrontEndCertificate from "./FrontEndCertificate/FrontEndCertificate.jsx";
@@ -10,19 +10,12 @@ import FrontEndCertificate from "./FrontEndCertificate/FrontEndCertificate.jsx";
 function AboutMeContent() {
     useEffect(() => {
         const container = document.getElementById("three-shapes-scene");
-        const script = document.createElement("script");
 
         if (container) {
             container.innerHTML = "";
         }
 
-        script.type = "module";
-        script.src = `${aboutMeScriptUrl}?run=${Date.now()}`;
-        document.body.appendChild(script);
-
-        return () => {
-            script.remove();
-        };
+        return createThreeShapesScene(container);
     }, []);
 
     return (

@@ -1,8 +1,10 @@
 import * as THREE from "three";
 
-const container = document.getElementById("three-shapes-scene");
+export function createThreeShapesScene(container) {
+    if (!container) {
+        return () => {};
+    }
 
-if (container) {
     const scene = new THREE.Scene();
 
     const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 100);
@@ -17,49 +19,49 @@ if (container) {
 
     const softGreenMaterial = new THREE.MeshBasicMaterial({ color: 0xa6f3aa, wireframe: true });
 
-const shapes = [
-    {
-        mesh: new THREE.Mesh(new THREE.BoxGeometry(0.75, 0.75, 0.75), greenMaterial ),
-        xPercent: 0.18,
-        yPercent: 0.72,
-        rotationSpeed: [0.008, 0.012, 0.004]
-    },
+    const shapes = [
+        {
+            mesh: new THREE.Mesh(new THREE.BoxGeometry(0.75, 0.75, 0.75), greenMaterial),
+            xPercent: 0.18,
+            yPercent: 0.72,
+            rotationSpeed: [0.008, 0.012, 0.004],
+        },
 
-    {
-        mesh: new THREE.Mesh(new THREE.ConeGeometry(0.42, 0.85, 14), softGreenMaterial),
-        xPercent: 0.50,
-        yPercent: 0.72,
-        rotationSpeed: [0.007, 0.012, 0.006]
-    },
+        {
+            mesh: new THREE.Mesh(new THREE.ConeGeometry(0.42, 0.85, 14), softGreenMaterial),
+            xPercent: 0.50,
+            yPercent: 0.72,
+            rotationSpeed: [0.007, 0.012, 0.006],
+        },
 
-    {
-        mesh: new THREE.Mesh(new THREE.SphereGeometry(0.48, 18, 12), greenMaterial),
-        xPercent: 0.82,
-        yPercent: 0.72,
-        rotationSpeed: [0.005, 0.01, 0.007]
-    },
+        {
+            mesh: new THREE.Mesh(new THREE.SphereGeometry(0.48, 18, 12), greenMaterial),
+            xPercent: 0.82,
+            yPercent: 0.72,
+            rotationSpeed: [0.005, 0.01, 0.007],
+        },
 
-    {
-        mesh: new THREE.Mesh(new THREE.ConeGeometry(0.58, 0.9, 4), softGreenMaterial),
-        xPercent: 0.18,
-        yPercent: 0.28,
-        rotationSpeed: [0.01, 0.006, 0.004]
-    },
+        {
+            mesh: new THREE.Mesh(new THREE.ConeGeometry(0.58, 0.9, 4), softGreenMaterial),
+            xPercent: 0.18,
+            yPercent: 0.28,
+            rotationSpeed: [0.01, 0.006, 0.004],
+        },
 
-    {
-        mesh: new THREE.Mesh(new THREE.BoxGeometry(0.95, 0.42, 0.58), greenMaterial),
-        xPercent: 0.50,
-        yPercent: 0.28,
-        rotationSpeed: [0.01, 0.006, 0.012]
-    },
+        {
+            mesh: new THREE.Mesh(new THREE.BoxGeometry(0.95, 0.42, 0.58), greenMaterial),
+            xPercent: 0.50,
+            yPercent: 0.28,
+            rotationSpeed: [0.01, 0.006, 0.012],
+        },
 
-    {
-        mesh: new THREE.Mesh(new THREE.CylinderGeometry(0.38, 0.38, 0.9, 16), softGreenMaterial),
-        xPercent: 0.82,
-        yPercent: 0.28,
-        rotationSpeed: [0.007, 0.005, 0.01]
-    }
-];
+        {
+            mesh: new THREE.Mesh(new THREE.CylinderGeometry(0.38, 0.38, 0.9, 16), softGreenMaterial),
+            xPercent: 0.82,
+            yPercent: 0.28,
+            rotationSpeed: [0.007, 0.005, 0.01],
+        },
+    ];
 
     shapes.forEach((shape) => {
         scene.add(shape.mesh);
@@ -80,7 +82,7 @@ const shapes = [
 
     pointsGeometry.setAttribute("position", new THREE.Float32BufferAttribute(points, 3));
 
-    const pointsMaterial = new THREE.PointsMaterial({color: 0x74d67a, size: 0.022, transparent: true, opacity: 0.55});
+    const pointsMaterial = new THREE.PointsMaterial({ color: 0x74d67a, size: 0.022, transparent: true, opacity: 0.55 });
 
     const particles = new THREE.Points(pointsGeometry, pointsMaterial);
     scene.add(particles);
@@ -139,8 +141,10 @@ const shapes = [
     window.addEventListener("resize", updateSceneLayout);
     updateSceneLayout();
 
+    let animationFrameId;
+
     function animate() {
-        requestAnimationFrame(animate);
+        animationFrameId = requestAnimationFrame(animate);
 
         shapes.forEach((shape) => {
             shape.mesh.rotation.x += shape.rotationSpeed[0];
@@ -152,4 +156,20 @@ const shapes = [
     }
 
     animate();
+
+    return () => {
+        cancelAnimationFrame(animationFrameId);
+        window.removeEventListener("resize", updateSceneLayout);
+        renderer.dispose();
+        greenMaterial.dispose();
+        softGreenMaterial.dispose();
+        pointsMaterial.dispose();
+        pointsGeometry.dispose();
+
+        shapes.forEach((shape) => {
+            shape.mesh.geometry.dispose();
+        });
+
+        container.innerHTML = "";
+    };
 }
